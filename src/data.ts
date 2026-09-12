@@ -114,7 +114,7 @@ export const SERVICE_IMAGE =
   'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Air%20Con.jpeg?raw=true?';
 
 export const COLD_ROOM_IMAGE =
-  'https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Coldroom.jpeg?raw=true';
 
 export const ABOUT_IMAGE =
   'https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
