@@ -10,7 +10,7 @@ export default function ServicesPage() {
       <PageHero
         title="Our Services"
         highlight="Expertise You Can Trust"
-        subtitle="From HVAC installation to cold room assembly and green energy technology, we deliver comprehensive cooling solutions."
+        subtitle="From ductable air conditioning units and HVAC installation to cold room assembly and green energy technology, we deliver comprehensive cooling solutions."
         icon={Wind}
         bgImage={SERVICE_IMAGE}
       />
