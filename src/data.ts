@@ -111,7 +111,7 @@ export const HERO_IMAGE =
   'https://images.pexels.com/photos/38788452/pexels-photo-38788452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 
 export const SERVICE_IMAGE =
-  'https://images.pexels.com/photos/7347538/pexels-photo-7347538.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Air%20Con.jpeg?raw=true?auto=compress&cs=tinysrgb&h=650&w=940';
 
 export const COLD_ROOM_IMAGE =
   'https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
