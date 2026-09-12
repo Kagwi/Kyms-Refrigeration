@@ -1,0 +1,291 @@
+import {
+  Wind,
+  Wrench,
+  Snowflake,
+  ThermometerSun,
+  Gauge,
+  Settings,
+  Package,
+  ShoppingCart,
+  Recycle,
+  Zap,
+  Building2,
+  Factory,
+  Hospital,
+  Store,
+  Hotel,
+  Warehouse,
+} from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
+
+export const COMPANY = {
+  name: 'KYMS Refrigeration and Air Conditioning',
+  shortName: 'KYMS',
+  tagline:
+    'We specialize in installing, servicing, testing and commissioning HVAC systems including CFC refrigeration phase-out programs and green energy technology.',
+  phone: '+254 799 188 112',
+  phoneIntl: '254799188112',
+  email: 'kelvinmaguta021@icloud.com',
+  location: 'Basement, Downtown Towers, Duruma Road',
+  guarantee:
+    'We guarantee you will experience the excellent breeze of efficient cooling!',
+  subGuarantee:
+    'Cooling solutions tailored to satisfy your cooling needs, for any type of air conditioning.',
+  googleBusinessLink: 'https://share.google/DgFITfaqnJapVPNlW',
+};
+
+export function whatsappLink(productName: string): string {
+  const message = `Hello, I am interested in buying ${productName} of all sizes.`;
+  return `https://wa.me/${COMPANY.phoneIntl}?text=${encodeURIComponent(message)}`;
+}
+
+export function whatsappServiceLink(serviceName: string): string {
+  const message = `Hello, I am interested in your ${serviceName} service. Please provide more information.`;
+  return `https://wa.me/${COMPANY.phoneIntl}?text=${encodeURIComponent(message)}`;
+}
+
+export const NAV_LINKS = [
+  { label: 'Home', path: '/' },
+  { label: 'Services', path: '/services' },
+  { label: 'Products', path: '/products' },
+  { label: 'Clients', path: '/clients' },
+  { label: 'About', path: '/about' },
+  { label: 'Contact', path: '/contact' },
+];
+
+export const HVAC_SERVICES = [
+  { icon: ThermometerSun, label: 'Check Up' },
+  { icon: Wind, label: 'Cleaning' },
+  { icon: Wrench, label: 'Repairs' },
+  { icon: Settings, label: 'Maintenance' },
+  { icon: Package, label: 'Dismantling' },
+  { icon: Snowflake, label: 'Installation' },
+  { icon: Gauge, label: 'Freon Charging' },
+  { icon: Recycle, label: 'System Reprocess' },
+  { icon: Wrench, label: 'Replacement Parts' },
+  { icon: Package, label: 'Relocation' },
+];
+
+export const REFRIGERATION_SERVICES = [
+  { icon: Snowflake, label: 'Cold Room Installation' },
+  { icon: Package, label: 'Cold Room Equipment Sales' },
+  { icon: Settings, label: 'Cold Storage Assembly' },
+  { icon: Zap, label: 'Green Energy Technology' },
+  { icon: Recycle, label: 'CFC Phase-Out Programs' },
+  { icon: Gauge, label: 'Testing & Commissioning' },
+];
+
+export interface Product {
+  name: string;
+  description: string;
+  image: string;
+}
+
+export const PRODUCTS: Product[] = [
+  {
+    name: 'Copper Pipes',
+    description:
+      'Premium quality copper pipes available in all sizes for air conditioning and refrigeration installations.',
+    image:
+      'https://images.pexels.com/photos/28169591/pexels-photo-28169591.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Elbows',
+    description:
+      'Copper elbow fittings in all sizes for secure and efficient HVAC pipe routing.',
+    image:
+      'https://images.pexels.com/photos/28178448/pexels-photo-28178448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Gas Maps / Gauges',
+    description:
+      'Professional manifold gauges and gas maps for precise refrigerant pressure measurement.',
+    image:
+      'https://images.pexels.com/photos/7937300/pexels-photo-7937300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+];
+
+// --- Images ---
+
+export const HERO_IMAGE =
+  'https://images.pexels.com/photos/38788452/pexels-photo-38788452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+
+export const SERVICE_IMAGE =
+  'https://images.pexels.com/photos/7347538/pexels-photo-7347538.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+
+export const COLD_ROOM_IMAGE =
+  'https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+
+export const ABOUT_IMAGE =
+  'https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+
+export const PRODUCTS_IMAGE_BG =
+  'https://images.pexels.com/photos/28169591/pexels-photo-28169591.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+
+export const CLIENTS_IMAGE_BG =
+  'https://images.pexels.com/photos/946310/pexels-photo-946310.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+
+export const GALLERY_IMAGES = [
+  {
+    src: 'https://images.pexels.com/photos/19016904/pexels-photo-19016904.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Rooftop HVAC units on a commercial building',
+    label: 'Commercial HVAC Installation',
+  },
+  {
+    src: 'https://images.pexels.com/photos/8456426/pexels-photo-8456426.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Rooftop air conditioning units',
+    label: 'Outdoor Condenser Units',
+  },
+  {
+    src: 'https://images.pexels.com/photos/27099094/pexels-photo-27099094.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Refrigerated trucks in industrial lot',
+    label: 'Refrigerated Transport',
+  },
+  {
+    src: 'https://images.pexels.com/photos/4487382/pexels-photo-4487382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Warehouse worker among stacked goods',
+    label: 'Cold Storage Operations',
+  },
+  {
+    src: 'https://images.pexels.com/photos/29181490/pexels-photo-29181490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Technician hands working with tools',
+    label: 'Professional Servicing',
+  },
+  {
+    src: 'https://images.pexels.com/photos/9606949/pexels-photo-9606949.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    alt: 'Hands using precision tools in workshop',
+    label: 'Precision Repairs',
+  },
+];
+
+export const BUILDING_IMAGES = [
+  'https://images.pexels.com/photos/14527417/pexels-photo-14527417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/946310/pexels-photo-946310.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/37320179/pexels-photo-37320179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/15202224/pexels-photo-15202224.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+];
+
+// --- Testimonials ---
+
+export interface Testimonial {
+  name: string;
+  role: string;
+  company: string;
+  message: string;
+  rating: number;
+  image: string;
+}
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    name: 'James Mwangi',
+    role: 'Facilities Manager',
+    company: 'Downtown Towers',
+    message:
+      'KYMS installed and commissioned our entire building HVAC system. Their professionalism and attention to detail was outstanding. The cooling efficiency improved dramatically after their system reprocess service.',
+    rating: 5,
+    image:
+      'https://images.pexels.com/photos/28442318/pexels-photo-28442318.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
+  },
+  {
+    name: 'Sarah Kamau',
+    role: 'Operations Director',
+    company: 'FreshCold Logistics',
+    message:
+      'We hired KYMS to assemble our cold storage facility and the results exceeded expectations. Their team was punctual, knowledgeable, and delivered ahead of schedule. Highly recommend for any cold room project.',
+    rating: 5,
+    image:
+      'https://images.pexels.com/photos/25651531/pexels-photo-25651531.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
+  },
+  {
+    name: 'David Otieno',
+    role: 'Business Owner',
+    company: 'Breeze Comfort Ltd',
+    message:
+      'After struggling with frequent breakdowns, KYMS took over our AC maintenance. They identified issues other technicians missed and our systems have run flawlessly since. Their freon charging service is top-notch.',
+    rating: 5,
+    image:
+      'https://images.pexels.com/photos/26150470/pexels-photo-26150470.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
+  },
+  {
+    name: 'Grace Wanjiru',
+    role: 'Hotel Manager',
+    company: 'Skyline Hotel',
+    message:
+      'The KYMS team handled the complete HVAC installation for our hotel renovation. They were clean, efficient, and respectful of our guests throughout the process. The cooling is perfectly balanced in every room.',
+    rating: 5,
+    image:
+      'https://images.pexels.com/photos/34761515/pexels-photo-34761515.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
+  },
+  {
+    name: 'Peter Kariuki',
+    role: 'Procurement Officer',
+    company: 'Metro Hospital',
+    message:
+      'For a hospital, reliable refrigeration is critical. KYMS installed our medical cold rooms and has maintained them flawlessly for over a year. Their response time for emergency call-outs is impressive.',
+    rating: 5,
+    image:
+      'https://images.pexels.com/photos/13392786/pexels-photo-13392786.png?auto=compress&cs=tinysrgb&h=200&w=200',
+  },
+  {
+    name: 'Lillian Achieng',
+    role: 'Store Owner',
+    company: 'ChillMart Supermarket',
+    message:
+      'KYMS supplied and installed all our refrigeration display units. They also trained our staff on basic maintenance. The copper pipes and fittings they provided are excellent quality. Great after-sales support.',
+    rating: 5,
+    image:
+      'https://images.pexels.com/photos/33680700/pexels-photo-33680700.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
+  },
+];
+
+// --- Past Clients ---
+
+export interface Client {
+  name: string;
+  type: string;
+  icon: LucideIcon;
+}
+
+export const PAST_CLIENTS: Client[] = [
+  { name: 'Downtown Towers', type: 'Commercial Building', icon: Building2 },
+  { name: 'FreshCold Logistics', type: 'Cold Storage', icon: Warehouse },
+  { name: 'Metro Hospital', type: 'Healthcare', icon: Hospital },
+  { name: 'Skyline Hotel', type: 'Hospitality', icon: Hotel },
+  { name: 'ChillMart Supermarket', type: 'Retail', icon: Store },
+  { name: 'Breeze Comfort Ltd', type: 'Office Space', icon: Building2 },
+  { name: 'Arctic Foods Kenya', type: 'Food Processing', icon: Factory },
+  { name: 'Highland Apartments', type: 'Residential', icon: Building2 },
+];
+
+// --- Partner Suppliers (refrigeration equipment & spare parts) ---
+
+export interface Partner {
+  name: string;
+  initials: string;
+  tagline: string;
+}
+
+export const PARTNERS: Partner[] = [
+  { name: 'Daikin Industries', initials: 'DK', tagline: 'Air Conditioning Systems' },
+  { name: 'Carrier Corporation', initials: 'CR', tagline: 'HVAC & Refrigeration' },
+  { name: 'Mitsubishi Electric', initials: 'ME', tagline: 'Climate Control' },
+  { name: 'Samsung HVAC', initials: 'SM', tagline: 'Cooling Solutions' },
+  { name: 'LG Electronics', initials: 'LG', tagline: 'Air Conditioners' },
+  { name: 'Trane Technologies', initials: 'TR', tagline: 'Commercial Cooling' },
+  { name: 'Bitzer Kenya', initials: 'BZ', tagline: 'Refrigeration Compressors' },
+  { name: 'Copeland Climate', initials: 'CP', tagline: 'Compressor Technology' },
+  { name: 'Danfoss Supply', initials: 'DF', tagline: 'Refrigeration Controls' },
+  { name: 'Güntner Kenya', initials: 'GT', tagline: 'Heat Exchangers' },
+];
+
+export const PAYMENT = {
+  bank: {
+    name: 'Equity Bank',
+    accountNo: '1330162508070',
+  },
+  mpesa: {
+    paybill: '247247',
+    accountNo: '0799 188 112',
+  },
+};
