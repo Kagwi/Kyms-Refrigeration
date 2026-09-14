@@ -163,7 +163,7 @@ export const GALLERY_IMAGES = [
     label: 'Outdoor Condenser Units',
   },
   {
-    src: 'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Data%20Centre.jpeg?raw=true',
+    src: 'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/WhatsApp%20Image%202026-09-06%20at%2011.48.40.jpeg?raw=true',
     alt: 'Refrigerated trucks in industrial lot',
     label: 'Cold Storage',
   },
