@@ -318,22 +318,13 @@ export default function HomePage() {
                 <p className="text-sm text-brand-navy/70 leading-relaxed mb-6 line-clamp-4">
                   "{testimonial.message}"
                 </p>
-                <div className="flex items-center gap-3 pt-5 border-t border-gray-100">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-brand-cyan/20">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-display font-bold text-brand-navy text-sm">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-xs text-brand-navy/50">
-                      {testimonial.role}, {testimonial.company}
-                    </p>
-                  </div>
+                <div className="flex flex-col pt-5 border-t border-gray-100">
+                  <h4 className="font-display font-bold text-brand-navy text-sm">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-xs text-brand-navy/50">
+                    {testimonial.role}, {testimonial.company}
+                  </p>
                 </div>
               </div>
             ))}
