@@ -25,47 +25,32 @@ const PRODUCTS = [
   {
     name: 'Refrigerators',
     description: 'Commercial and domestic fridges for reliable food and beverage cooling.',
-    image: 'https://images.pexels.com/photos/29223418/pexels-photo-29223418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/38306635/pexels-photo-38306635.jpeg',
   },
   {
     name: 'Air Conditioners',
     description: 'Split, window, and industrial AC units for efficient space cooling.',
-    image: 'https://images.pexels.com/photos/7616651/pexels-photo-7616651.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/27134985/pexels-photo-27134985.jpeg',
   },
   {
     name: 'Control Panels',
     description: 'HVAC control panels for centralised monitoring and system management.',
-    image: 'https://images.pexels.com/photos/24828656/pexels-photo-24828656.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/5953723/pexels-photo-5953723.jpeg',
   },
   {
     name: 'Thermostats',
     description: 'Digital and programmable thermostats for precise temperature control.',
-    image: 'https://images.pexels.com/photos/7616651/pexels-photo-7616651.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    name: 'Condensers',
-    description: 'Outdoor condenser units for heat rejection in refrigeration systems.',
-    image: 'https://images.pexels.com/photos/24828656/pexels-photo-24828656.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/7616651/pexels-photo-7616651.jpeg',
   },
   {
     name: 'Evaporator Fans',
     description: 'High-performance evaporator fan motors for consistent air circulation.',
-    image: 'https://images.pexels.com/photos/29223418/pexels-photo-29223418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/5502720/pexels-photo-5502720.jpeg',
   },
   {
     name: 'Thermostatic Expansion Valves',
     description: 'TXV valves for precise refrigerant flow control in HVAC systems.',
-    image: 'https://images.pexels.com/photos/7616651/pexels-photo-7616651.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    name: 'Filter Dryers',
-    description: 'Refrigeration-grade filter driers to remove moisture and contaminants.',
-    image: 'https://images.pexels.com/photos/24828656/pexels-photo-24828656.jpeg?auto=compress&cs=tinysrgb&w=800',
-  },
-  {
-    name: 'Thermo Sensors',
-    description: 'Accurate temperature sensors for HVAC monitoring and control.',
-    image: 'https://images.pexels.com/photos/29223418/pexels-photo-29223418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/372796/pexels-photo-372796.jpeg',
   },
 ];
 
