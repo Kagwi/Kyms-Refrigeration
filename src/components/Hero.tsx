@@ -1,5 +1,6 @@
 import { Snowflake, Wind, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import CountUp from '@/components/CountUp';
 import { COMPANY, HERO_IMAGE, whatsappLink } from '@/data';
 
 export default function Hero() {
@@ -49,14 +50,14 @@ export default function Hero() {
               href={whatsappLink('your services')}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-2xl hover:scale-[1.03] transition-all duration-300"
+              className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-lg hover:scale-[1.02] transition-all"
             >
               Get a Free Quote
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
             <a
               href={`tel:${COMPANY.phone.replace(/\s/g, '')}`}
-              className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white font-semibold px-7 py-4 rounded-xl hover:bg-white/20 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 bg-white/10 backdrop-blur-sm border border-white/25 text-white font-semibold px-7 py-4 rounded-xl hover:bg-white/20 transition-all"
             >
               <Phone className="w-5 h-5" />
               Call {COMPANY.phone}
@@ -66,12 +67,14 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/15 animate-fade-in-up" style={{ animationDelay: '0.45s' }}>
             {[
-              { value: '16', label: 'Services Offered' },
-              { value: '8+', label: 'Past Clients' },
-              { value: '10', label: 'Partner Suppliers' },
+              { value: 50, label: 'Past Clients', suffix: '+' },
+              { value: 16, label: 'Services Offered', suffix: '' },
+              { value: 10, label: 'Partner Suppliers', suffix: '' },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="text-2xl sm:text-3xl font-bold text-brand-cyan">{stat.value}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-brand-cyan">
+                  <CountUp end={stat.value} duration={1500} suffix={stat.suffix} />
+                </div>
                 <div className="text-xs sm:text-sm text-white/60 mt-1">{stat.label}</div>
               </div>
             ))}
