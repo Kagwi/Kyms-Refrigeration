@@ -5,6 +5,9 @@ import About from '@/components/About';
 import PageWrapper from '@/components/PageWrapper';
 import { ABOUT_IMAGE, COMPANY, BUILDING_IMAGES } from '@/data';
 
+// Replace with the actual founder image path or URL
+const FOUNDER_IMAGE = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+
 const STATS = [
   { value: '8+', label: 'Past Clients' },
   { value: '16', label: 'Services Offered' },
@@ -23,6 +26,51 @@ export default function AboutPage() {
         bgImage={ABOUT_IMAGE}
       />
       <About />
+
+      {/* Founder Section */}
+      <section className="relative py-20 sm:py-24 bg-white overflow-hidden">
+        <div className="section-padding max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Founder Image */}
+            <div className="reveal relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src={FOUNDER_IMAGE}
+                  alt="Kelvin Kimemia Maguta - Founder"
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/40 to-transparent" />
+              </div>
+              {/* Decorative blurs */}
+              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-cyan/10 rounded-full blur-2xl -z-10" />
+              <div className="absolute -top-4 -left-4 w-24 h-24 bg-brand-navy/5 rounded-full blur-xl -z-10" />
+            </div>
+
+            {/* Founder Text */}
+            <div className="reveal" style={{ transitionDelay: '100ms' }}>
+              <div className="inline-flex items-center gap-2 bg-brand-cyan/10 rounded-full px-4 py-1.5 mb-4">
+                <Snowflake className="w-4 h-4 text-brand-cyan-dark" />
+                <span className="text-brand-cyan-dark text-sm font-semibold tracking-wide">
+                  Meet Our Founder
+                </span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
+                Kelvin Kimemia Maguta
+              </h2>
+              <p className="text-brand-navy/70 text-lg leading-relaxed mb-6">
+                With years of experience in the refrigeration and air conditioning industry,
+                Kelvin founded KYMS Refrigeration and Air Conditioning with a vision to deliver
+                superior quality services. His commitment to excellence and customer satisfaction
+                drives every project we undertake.
+              </p>
+              <p className="text-brand-navy/60 leading-relaxed">
+                Under his leadership, we continue to provide reliable, sustainable, and
+                innovative cooling solutions for homes, businesses, and industries across the region.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Stats Banner */}
       <section className="relative py-16 bg-gradient-to-r from-brand-navy to-brand-navy-light overflow-hidden">
@@ -54,7 +102,9 @@ export default function AboutPage() {
           <div className="text-center max-w-3xl mx-auto mb-14 reveal">
             <div className="inline-flex items-center gap-2 bg-brand-cyan/10 rounded-full px-4 py-1.5 mb-4">
               <Snowflake className="w-4 h-4 text-brand-cyan-dark" />
-              <span className="text-brand-cyan-dark text-sm font-semibold tracking-wide">Where We Work</span>
+              <span className="text-brand-cyan-dark text-sm font-semibold tracking-wide">
+                Where We Work
+              </span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-navy mb-4">
               Serving All Types of Buildings
