@@ -163,14 +163,14 @@ export const GALLERY_IMAGES = [
     label: 'Outdoor Condenser Units',
   },
   {
-    src: 'https://images.pexels.com/photos/27099094/pexels-photo-27099094.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    src: 'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Data%20Centre.jpeg?raw=true',
     alt: 'Refrigerated trucks in industrial lot',
-    label: 'Refrigerated Transport',
+    label: 'Cold Storage',
   },
   {
-    src: 'https://images.pexels.com/photos/4487382/pexels-photo-4487382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    src: 'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Data%20Centre.jpeg?raw=true',
     alt: 'Warehouse worker among stacked goods',
-    label: 'Cold Storage Operations',
+    label: 'Data Center Cooling Systems',
   },
   {
     src: 'https://images.pexels.com/photos/29181490/pexels-photo-29181490.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
