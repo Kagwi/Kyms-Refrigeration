@@ -107,15 +107,14 @@ export const PRODUCTS: Product[] = [
 
 // --- Images ---
 
-const githubAsset = (file: string) =>
-  `https://raw.githubusercontent.com/Kagwi/Kyms-Refrigeration/main/${encodeURIComponent(file)}`;
-
 export const HERO_IMAGE =
   'https://images.pexels.com/photos/38788452/pexels-photo-38788452.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 
-export const SERVICE_IMAGE = githubAsset('Air Con.jpeg');
+export const SERVICE_IMAGE =
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Air%20Con.jpeg?raw=true?';
 
-export const COLD_ROOM_IMAGE = githubAsset('Coldroom.jpeg');
+export const COLD_ROOM_IMAGE =
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Coldroom.jpeg?raw=true';
 
 export const ABOUT_IMAGE =
   'https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
@@ -162,8 +161,8 @@ export const GALLERY_IMAGES = [
 export const BUILDING_IMAGES = [
   'https://images.pexels.com/photos/14527417/pexels-photo-14527417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/946310/pexels-photo-946310.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  githubAsset('Building 2.jpeg'),
-  githubAsset('Building 4.jpeg'),
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Building%202.jpeg?raw=true',
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Building%204.jpeg?raw=true',
 ];
 
 // --- Testimonials ---
