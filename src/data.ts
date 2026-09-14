@@ -161,8 +161,8 @@ export const GALLERY_IMAGES = [
 export const BUILDING_IMAGES = [
   'https://images.pexels.com/photos/14527417/pexels-photo-14527417.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/946310/pexels-photo-946310.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/37320179/pexels-photo-37320179.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/15202224/pexels-photo-15202224.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Building%202.jpeg?raw=true',
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Building%204.jpeg?raw=true',
 ];
 
 // --- Testimonials ---
