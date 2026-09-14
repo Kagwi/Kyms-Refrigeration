@@ -227,25 +227,25 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
   },
   {
-    name: 'Grace Wanjiru',
-    role: 'Hotel Manager',
-    company: 'Skyline Hotel',
+    name: 'Patrick Muhia',
+    role: 'Manager',
+    company: 'World Plastics',
     message:
       'The KYMS team handled the complete HVAC installation for our hotel renovation. They were clean, efficient, and respectful of our guests throughout the process. The cooling is perfectly balanced in every room.',
     rating: 5,
   },
   {
-    name: 'Peter Kariuki',
-    role: 'Procurement Officer',
-    company: 'Metro Hospital',
+    name: 'Mr. Farah',
+    role: 'Proprietor',
+    company: 'Second Cafe',
     message:
       'For a hospital, reliable refrigeration is critical. KYMS installed our medical cold rooms and has maintained them flawlessly for over a year. Their response time for emergency call-outs is impressive.',
     rating: 5,
   },
   {
-    name: 'Lillian Achieng',
-    role: 'Store Owner',
-    company: 'ChillMart Supermarket',
+    name: 'Mr. Samuel',
+    role: 'Christian Foundation Fellowship (CFF)',
+    company: 'Church',
     message:
       'KYMS supplied and installed all our refrigeration display units. They also trained our staff on basic maintenance. The copper pipes and fittings they provided are excellent quality. Great after-sales support.',
     rating: 5,
