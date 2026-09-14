@@ -13,6 +13,7 @@ import {
 import Hero from '@/components/Hero';
 import PageWrapper from '@/components/PageWrapper';
 import PartnerCarousel from '@/components/PartnerCarousel';
+import CountUp from '@/components/CountUp';
 import {
   COMPANY,
   HVAC_SERVICES,
@@ -25,6 +26,13 @@ import {
   whatsappLink,
   whatsappServiceLink,
 } from '@/data';
+
+const STATS = [
+  { value: 50, label: 'Past Clients', suffix: '+' },
+  { value: 16, label: 'Services Offered' },
+  { value: 10, label: 'Partner Suppliers' },
+  { value: 10, label: 'Products Available', suffix: '+' },
+];
 
 export default function HomePage() {
   return (
@@ -130,7 +138,7 @@ export default function HomePage() {
           <div className="text-center reveal">
             <Link
               to="/services"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-3.5 rounded-xl shadow-brand hover:shadow-lg hover:scale-105 transition-all"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-3.5 rounded-xl shadow-brand hover:shadow-lg hover:scale-[1.02] transition-all"
             >
               Explore All Services
               <ArrowRight className="w-5 h-5" />
@@ -190,11 +198,35 @@ export default function HomePage() {
           <div className="text-center reveal">
             <Link
               to="/products"
-              className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-7 py-3.5 rounded-xl shadow-md border border-gray-200 hover:border-brand-cyan hover:text-brand-cyan-dark hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-7 py-3.5 rounded-xl shadow-md border border-gray-200 hover:border-brand-cyan hover:text-brand-cyan-dark transition-all"
             >
               View All Products
               <ArrowRight className="w-5 h-5" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Banner */}
+      <section className="relative py-16 bg-gradient-to-r from-brand-navy to-brand-navy-light overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-20" />
+        <div className="absolute top-0 right-0 w-72 h-72 bg-brand-cyan/10 rounded-full blur-3xl" />
+        <div className="relative section-padding max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {STATS.map((stat, index) => (
+              <div
+                key={stat.label}
+                className="reveal text-center"
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <div className="text-4xl sm:text-5xl font-bold text-brand-cyan mb-2">
+                  <CountUp end={stat.value} duration={2000} suffix={stat.suffix || ''} />
+                </div>
+                <div className="text-sm text-white/60 uppercase tracking-wide">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -243,7 +275,7 @@ export default function HomePage() {
           <div className="text-center reveal">
             <Link
               to="/clients"
-              className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-7 py-3.5 rounded-xl shadow-md border border-gray-200 hover:border-brand-cyan hover:text-brand-cyan-dark hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-7 py-3.5 rounded-xl shadow-md border border-gray-200 hover:border-brand-cyan hover:text-brand-cyan-dark transition-all"
             >
               See All Clients & Projects
               <ArrowRight className="w-5 h-5" />
@@ -286,13 +318,22 @@ export default function HomePage() {
                 <p className="text-sm text-brand-navy/70 leading-relaxed mb-6 line-clamp-4">
                   "{testimonial.message}"
                 </p>
-                <div className="flex flex-col pt-5 border-t border-gray-100">
-                  <h4 className="font-display font-bold text-brand-navy text-sm">
-                    {testimonial.name}
-                  </h4>
-                  <p className="text-xs text-brand-navy/50">
-                    {testimonial.role}, {testimonial.company}
-                  </p>
+                <div className="flex items-center gap-3 pt-5 border-t border-gray-100">
+                  <div className="relative w-12 h-12 rounded-full overflow-hidden flex-shrink-0 ring-2 ring-brand-cyan/20">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="font-display font-bold text-brand-navy text-sm">
+                      {testimonial.name}
+                    </h4>
+                    <p className="text-xs text-brand-navy/50">
+                      {testimonial.role}, {testimonial.company}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -301,7 +342,7 @@ export default function HomePage() {
           <div className="text-center reveal">
             <Link
               to="/clients"
-              className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-7 py-3.5 rounded-xl shadow-md border border-gray-200 hover:border-brand-cyan hover:text-brand-cyan-dark hover:shadow-lg transition-all"
+              className="inline-flex items-center gap-2 bg-white text-brand-navy font-semibold px-7 py-3.5 rounded-xl shadow-md border border-gray-200 hover:border-brand-cyan hover:text-brand-cyan-dark transition-all"
             >
               Read All Testimonials
               <ArrowRight className="w-5 h-5" />
@@ -348,7 +389,7 @@ export default function HomePage() {
                   href={whatsappServiceLink('HVAC & Aircon')}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-lg hover:scale-105 transition-all"
+                  className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-lg hover:scale-[1.02] transition-all"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Get a Free Quote
