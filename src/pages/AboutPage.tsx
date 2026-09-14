@@ -6,7 +6,7 @@ import PageWrapper from '@/components/PageWrapper';
 import { ABOUT_IMAGE, COMPANY, BUILDING_IMAGES } from '@/data';
 
 // Replace with the actual founder image path or URL
-const FOUNDER_IMAGE = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+const FOUNDER_IMAGE = 'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Kymemia.png?raw=true';
 
 const STATS = [
   { value: '8+', label: 'Past Clients' },
