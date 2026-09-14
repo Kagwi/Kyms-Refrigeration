@@ -225,7 +225,7 @@ export default function HomePage() {
                 <div className="h-44 sm:h-56 overflow-hidden">
                   <img
                     src={img.src}
-                    alt={img.alt}
+                    
                     className="w-full h-full object-cover"
                   />
                 </div>
