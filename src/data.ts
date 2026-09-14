@@ -86,17 +86,17 @@ export const PRODUCTS: Product[] = [
   {
     name: 'Copper Pipes',
     description: 'High-quality copper pipes available in various sizes for HVAC and refrigeration.',
-    image: 'https://images.pexels.com/photos/5691622/pexels-photo-5691622.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/28169591/pexels-photo-28169591.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     name: 'Elbows',
     description: 'Copper elbows and fittings in multiple sizes for secure pipe connections.',
-    image: 'https://images.pexels.com/photos/5691625/pexels-photo-5691625.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/28178448/pexels-photo-28178448.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     name: 'Gas Gauges',
     description: 'Precision gas gauges for accurate refrigerant pressure readings.',
-    image: 'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/7937300/pexels-photo-7937300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   // New products
   {
