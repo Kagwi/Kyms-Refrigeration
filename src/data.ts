@@ -173,7 +173,6 @@ export interface Testimonial {
   company: string;
   message: string;
   rating: number;
-  image: string;
 }
 
 export const TESTIMONIALS: Testimonial[] = [
@@ -184,8 +183,6 @@ export const TESTIMONIALS: Testimonial[] = [
     message:
       'KYMS installed and commissioned our entire building HVAC system. Their professionalism and attention to detail was outstanding. The cooling efficiency improved dramatically after their system reprocess service.',
     rating: 5,
-    image:
-      'https://images.pexels.com/photos/28442318/pexels-photo-28442318.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
   },
   {
     name: 'Sarah Kamau',
@@ -194,8 +191,6 @@ export const TESTIMONIALS: Testimonial[] = [
     message:
       'We hired KYMS to assemble our cold storage facility and the results exceeded expectations. Their team was punctual, knowledgeable, and delivered ahead of schedule. Highly recommend for any cold room project.',
     rating: 5,
-    image:
-      'https://images.pexels.com/photos/25651531/pexels-photo-25651531.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
   },
   {
     name: 'David Otieno',
@@ -204,8 +199,6 @@ export const TESTIMONIALS: Testimonial[] = [
     message:
       'After struggling with frequent breakdowns, KYMS took over our AC maintenance. They identified issues other technicians missed and our systems have run flawlessly since. Their freon charging service is top-notch.',
     rating: 5,
-    image:
-      'https://images.pexels.com/photos/26150470/pexels-photo-26150470.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
   },
   {
     name: 'Grace Wanjiru',
@@ -214,8 +207,6 @@ export const TESTIMONIALS: Testimonial[] = [
     message:
       'The KYMS team handled the complete HVAC installation for our hotel renovation. They were clean, efficient, and respectful of our guests throughout the process. The cooling is perfectly balanced in every room.',
     rating: 5,
-    image:
-      'https://images.pexels.com/photos/34761515/pexels-photo-34761515.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
   },
   {
     name: 'Peter Kariuki',
@@ -224,8 +215,6 @@ export const TESTIMONIALS: Testimonial[] = [
     message:
       'For a hospital, reliable refrigeration is critical. KYMS installed our medical cold rooms and has maintained them flawlessly for over a year. Their response time for emergency call-outs is impressive.',
     rating: 5,
-    image:
-      'https://images.pexels.com/photos/13392786/pexels-photo-13392786.png?auto=compress&cs=tinysrgb&h=200&w=200',
   },
   {
     name: 'Lillian Achieng',
@@ -234,8 +223,6 @@ export const TESTIMONIALS: Testimonial[] = [
     message:
       'KYMS supplied and installed all our refrigeration display units. They also trained our staff on basic maintenance. The copper pipes and fittings they provided are excellent quality. Great after-sales support.',
     rating: 5,
-    image:
-      'https://images.pexels.com/photos/33680700/pexels-photo-33680700.jpeg?auto=compress&cs=tinysrgb&h=200&w=200',
   },
 ];
 
@@ -248,14 +235,12 @@ export interface Client {
 }
 
 export const PAST_CLIENTS: Client[] = [
-  { name: 'Downtown Towers', type: 'Commercial Building', icon: Building2 },
-  { name: 'FreshCold Logistics', type: 'Cold Storage', icon: Warehouse },
-  { name: 'Metro Hospital', type: 'Healthcare', icon: Hospital },
-  { name: 'Skyline Hotel', type: 'Hospitality', icon: Hotel },
-  { name: 'ChillMart Supermarket', type: 'Retail', icon: Store },
-  { name: 'Breeze Comfort Ltd', type: 'Office Space', icon: Building2 },
-  { name: 'Arctic Foods Kenya', type: 'Food Processing', icon: Factory },
-  { name: 'Highland Apartments', type: 'Residential', icon: Building2 },
+  { name: 'World Plastics', type: 'Commercial Building', icon: Building2 },
+  { name: 'Second Cafe', type: 'Hospitality', icon: Hotel },
+  { name: 'Christian Foundation Fellowship', type: 'Church', icon: Building2 },
+  { name: 'Queendom Salon', type: 'Commercial Building', icon: Building2 },
+  { name: 'Scales Technology', type: 'Office Space', icon: Building2 },
+  { name: 'Highland Peak View Apartments', type: 'Residential', icon: Building2 },
 ];
 
 // --- Partner Suppliers (refrigeration equipment & spare parts) ---
@@ -267,16 +252,16 @@ export interface Partner {
 }
 
 export const PARTNERS: Partner[] = [
-  { name: 'Daikin Industries', initials: 'DK', tagline: 'Air Conditioning Systems' },
-  { name: 'Carrier Corporation', initials: 'CR', tagline: 'HVAC & Refrigeration' },
-  { name: 'Mitsubishi Electric', initials: 'ME', tagline: 'Climate Control' },
+  { name: 'Roch', initials: 'R', tagline: 'HVAC & Refrigeration' },
+  { name: 'Hisesnse', initials: 'HS', tagline: 'HVAC & Refrigeration' },
+  { name: 'Von Hot Point', initials: 'VHP', tagline: 'Climate Control' },
   { name: 'Samsung HVAC', initials: 'SM', tagline: 'Cooling Solutions' },
   { name: 'LG Electronics', initials: 'LG', tagline: 'Air Conditioners' },
-  { name: 'Trane Technologies', initials: 'TR', tagline: 'Commercial Cooling' },
+  { name: 'SmartPro', initials: 'SP', tagline: 'Commercial Cooling' },
   { name: 'Bitzer Kenya', initials: 'BZ', tagline: 'Refrigeration Compressors' },
-  { name: 'Copeland Climate', initials: 'CP', tagline: 'Compressor Technology' },
+  { name: 'TCL', initials: 'TCL', tagline: 'Compressor Technology' },
   { name: 'Danfoss Supply', initials: 'DF', tagline: 'Refrigeration Controls' },
-  { name: 'Güntner Kenya', initials: 'GT', tagline: 'Heat Exchangers' },
+  { name: 'Haier', initials: 'H', tagline: 'Heat Exchangers' },
 ];
 
 export const PAYMENT = {
