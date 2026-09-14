@@ -82,6 +82,7 @@ export interface Product {
 }
 
 export const PRODUCTS: Product[] = [
+  // --- Original products ---
   {
     name: 'Copper Pipes',
     description:
@@ -100,6 +101,72 @@ export const PRODUCTS: Product[] = [
     name: 'Gas Maps / Gauges',
     description:
       'Professional manifold gauges and gas maps for precise refrigerant pressure measurement.',
+    image:
+      'https://images.pexels.com/photos/7937300/pexels-photo-7937300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  // --- Refrigeration & HVAC units ---
+  {
+    name: 'Refrigerators',
+    description:
+      'Commercial and domestic refrigerators for reliable food, beverage and product cooling.',
+    image:
+      'https://images.pexels.com/photos/29223418/pexels-photo-29223418.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Air Conditioners',
+    description:
+      'Split, window and industrial air conditioning units for efficient space cooling.',
+    image:
+      'https://images.pexels.com/photos/7616651/pexels-photo-7616651.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Condensers',
+    description:
+      'Outdoor condenser units for effective heat rejection in refrigeration and HVAC systems.',
+    image:
+      'https://images.pexels.com/photos/8456426/pexels-photo-8456426.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  // --- Controls & instrumentation ---
+  {
+    name: 'Control Panels',
+    description:
+      'HVAC and refrigeration control panels for centralised monitoring and system management.',
+    image:
+      'https://images.pexels.com/photos/24828656/pexels-photo-24828656.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Thermostats',
+    description:
+      'Digital and programmable thermostats for precise temperature control and energy savings.',
+    image:
+      'https://images.pexels.com/photos/4126703/pexels-photo-4126703.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Thermo Sensors',
+    description:
+      'Accurate temperature sensors for reliable HVAC monitoring and system control.',
+    image:
+      'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  // --- Components & spare parts ---
+  {
+    name: 'Evaporator Fans',
+    description:
+      'High-performance evaporator fan motors for consistent air circulation and cooling.',
+    image:
+      'https://images.pexels.com/photos/4487382/pexels-photo-4487382.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Thermostatic Expansion Valves',
+    description:
+      'TXV valves for precise refrigerant flow control in air conditioning and refrigeration systems.',
+    image:
+      'https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  },
+  {
+    name: 'Filter Dryers',
+    description:
+      'Refrigeration-grade filter dryers that remove moisture and contaminants from the system.',
     image:
       'https://images.pexels.com/photos/7937300/pexels-photo-7937300.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
