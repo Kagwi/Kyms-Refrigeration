@@ -106,14 +106,13 @@ export default function ClientsPage() {
                 </p>
 
                 {/* Author */}
-                  <div>
-                    <h4 className="font-display font-bold text-brand-navy text-sm">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-xs text-brand-navy/50">
-                      {testimonial.role}, {testimonial.company}
-                    </p>
-                  </div>
+                <div className="flex flex-col pt-5 border-t border-gray-100">
+                  <h4 className="font-display font-bold text-brand-navy text-sm">
+                    {testimonial.name}
+                  </h4>
+                  <p className="text-xs text-brand-navy/50">
+                    {testimonial.role}, {testimonial.company}
+                  </p>
                 </div>
               </div>
             ))}
@@ -206,7 +205,7 @@ export default function ClientsPage() {
                 href={whatsappServiceLink('HVAC & Refrigeration')}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-lg hover:scale-[1.03] transition-all"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-lg hover:scale-105 transition-all"
               >
                 <MessageCircle className="w-5 h-5" />
                 Get a Free Quote
