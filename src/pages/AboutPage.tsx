@@ -3,16 +3,17 @@ import { Link } from 'react-router-dom';
 import PageHero from '@/components/PageHero';
 import About from '@/components/About';
 import PageWrapper from '@/components/PageWrapper';
+import CountUp from '@/components/CountUp';
 import { ABOUT_IMAGE, COMPANY, BUILDING_IMAGES } from '@/data';
 
 // Replace with the actual founder image path or URL
 const FOUNDER_IMAGE = 'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Kymemia.png?raw=true';
 
 const STATS = [
-  { value: '8+', label: 'Past Clients' },
-  { value: '16', label: 'Services Offered' },
-  { value: '10', label: 'Partner Suppliers' },
-  { value: '3', label: 'Products Available' },
+  { value: 50, label: 'Past Clients', suffix: '+' },
+  { value: 16, label: 'Services Offered' },
+  { value: 10, label: 'Partner Suppliers' },
+  { value: 10, label: 'Products Available', suffix: '+' },
 ];
 
 export default function AboutPage() {
@@ -85,7 +86,7 @@ export default function AboutPage() {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="text-4xl sm:text-5xl font-bold text-brand-cyan mb-2">
-                  {stat.value}
+                  <CountUp end={stat.value} duration={2000} suffix={stat.suffix || ''} />
                 </div>
                 <div className="text-sm text-white/60 uppercase tracking-wide">
                   {stat.label}
@@ -187,7 +188,7 @@ export default function AboutPage() {
               </p>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-lg hover:scale-[1.03] transition-all"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-cyan-dark text-white font-semibold px-7 py-4 rounded-xl shadow-brand hover:shadow-lg hover:scale-[1.02] transition-all"
               >
                 Get in Touch
                 <ArrowRight className="w-5 h-5" />
