@@ -16,16 +16,22 @@ export default function PartnerCarousel() {
             key={`${partner.name}-${index}`}
             className="flex-shrink-0 w-52 sm:w-60 bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 px-6 py-5 flex items-center gap-4 hover:scale-[1.03] hover:border-brand-cyan/30"
           >
-            {/* Logo placeholder */}
-            <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-brand-navy to-brand-navy-light flex items-center justify-center shadow-md">
-              <span className="text-brand-cyan-light font-display font-bold text-lg tracking-tight">
-                {partner.initials}
-              </span>
+            {/* Partner Logo */}
+            <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm overflow-hidden">
+              <img
+                src={partner.logo}
+                alt={`${partner.name} logo`}
+                className="w-full h-full object-contain p-2"
+                loading="lazy"
+              />
             </div>
+
+            {/* Partner Information */}
             <div className="min-w-0">
               <h4 className="font-display font-bold text-brand-navy text-sm leading-tight truncate">
                 {partner.name}
               </h4>
+
               <p className="text-xs text-brand-navy/50 mt-0.5 truncate">
                 {partner.tagline}
               </p>
