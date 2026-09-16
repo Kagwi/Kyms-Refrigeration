@@ -35,7 +35,7 @@ export const COMPANY = {
 };
 
 export function whatsappLink(productName: string): string {
-  const message = `Hello, I am interested in buying ${productName} of all sizes.`;
+  const message = `Hello, I am interested in buying ${productName}.`;
   return `https://wa.me/${COMPANY.phoneIntl}?text=${encodeURIComponent(message)}`;
 }
 
