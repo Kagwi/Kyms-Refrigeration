@@ -162,7 +162,7 @@ export const COLD_ROOM_IMAGE =
   'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/Coldroom.jpeg?raw=true';
 
 export const ABOUT_IMAGE =
-  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/PPK.PNG?raw=true';
+  'https://github.com/Kagwi/Kyms-Refrigeration/blob/main/PPK.PNG?raw=true auto=compress&cs=tinysrgb&h=650&w=940';
 
 export const PRODUCTS_IMAGE_BG =
   'https://images.pexels.com/photos/28169591/pexels-photo-28169591.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
