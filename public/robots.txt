@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kymsrefrigeration.co.ke/sitemap.xml
