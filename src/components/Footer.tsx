@@ -194,7 +194,7 @@ export default function Footer() {
               aria-label="Visit Neonsol Creatives website"
               className="text-xs text-white/40 hover:text-brand-cyan-light transition-colors duration-300"
             >
-              Neonsol Creatives
+              Created & Designed by Neonsol Creatives
             </a>
 
           </div>
