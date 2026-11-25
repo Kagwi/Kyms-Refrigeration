@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import {
   Snowflake,
@@ -23,12 +24,14 @@ export default function Footer() {
 
       <div className="relative section-padding max-w-7xl mx-auto py-16">
         <div className="grid lg:grid-cols-4 gap-10 mb-12">
+
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2.5 mb-4">
               <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-brand-cyan to-brand-cyan-dark flex items-center justify-center shadow-brand">
                 <Snowflake className="w-6 h-6 text-white" strokeWidth={2.2} />
               </div>
+
               <div className="flex flex-col leading-none">
                 <span className="font-display font-bold text-lg">KYMS</span>
                 <span className="text-[10px] text-brand-cyan tracking-wide">
@@ -36,9 +39,11 @@ export default function Footer() {
                 </span>
               </div>
             </div>
+
             <p className="text-sm text-white/60 leading-relaxed mb-5">
               {COMPANY.tagline}
             </p>
+
             <a
               href={whatsappLink('your services')}
               target="_blank"
@@ -55,6 +60,7 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wide">
               Quick Links
             </h4>
+
             <ul className="space-y-2.5">
               {NAV_LINKS.map((link) => (
                 <li key={link.path}>
@@ -74,9 +80,11 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wide">
               Contact Info
             </h4>
+
             <ul className="space-y-3">
               <li className="flex items-start gap-2.5">
                 <Phone className="w-4 h-4 text-brand-cyan mt-0.5 flex-shrink-0" />
+
                 <a
                   href={`tel:${COMPANY.phone.replace(/\s/g, '')}`}
                   className="text-sm text-white/60 hover:text-brand-cyan-light transition-colors"
@@ -84,8 +92,10 @@ export default function Footer() {
                   {COMPANY.phone}
                 </a>
               </li>
+
               <li className="flex items-start gap-2.5">
                 <Mail className="w-4 h-4 text-brand-cyan mt-0.5 flex-shrink-0" />
+
                 <a
                   href={`mailto:${COMPANY.email}`}
                   className="text-sm text-white/60 hover:text-brand-cyan-light transition-colors break-all"
@@ -93,10 +103,15 @@ export default function Footer() {
                   {COMPANY.email}
                 </a>
               </li>
+
               <li className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-brand-cyan mt-0.5 flex-shrink-0" />
-                <span className="text-sm text-white/60">{COMPANY.location}</span>
+
+                <span className="text-sm text-white/60">
+                  {COMPANY.location}
+                </span>
               </li>
+
               <li>
                 <a
                   href={COMPANY.googleBusinessLink}
@@ -116,18 +131,23 @@ export default function Footer() {
             <h4 className="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wide">
               Payment Details
             </h4>
+
             <div className="space-y-4">
+
               {/* Bank */}
               <div className="bg-white/5 rounded-xl p-4 border border-white/10">
                 <div className="flex items-center gap-2 mb-2">
                   <Building2 className="w-4 h-4 text-brand-cyan" />
+
                   <span className="text-xs font-semibold text-white/80 uppercase tracking-wide">
                     Bank
                   </span>
                 </div>
+
                 <p className="text-sm text-white/70">
                   {PAYMENT.bank.name}
                 </p>
+
                 <p className="text-xs text-white/50 mt-0.5">
                   A/C: {PAYMENT.bank.accountNo}
                 </p>
@@ -137,30 +157,54 @@ export default function Footer() {
               <div className="bg-white/5 rounded-xl p-4 border border-white/10">
                 <div className="flex items-center gap-2 mb-2">
                   <Wallet className="w-4 h-4 text-brand-cyan" />
+
                   <span className="text-xs font-semibold text-white/80 uppercase tracking-wide">
                     M-Pesa
                   </span>
                 </div>
+
                 <p className="text-sm text-white/70">
                   Paybill: {PAYMENT.mpesa.paybill}
                 </p>
+
                 <p className="text-xs text-white/50 mt-0.5">
                   A/C: {PAYMENT.mpesa.accountNo}
                 </p>
               </div>
+
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-white/40 text-center sm:text-left">
-            &copy; {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
-          </p>
+
+          {/* Copyright and Developer Credit */}
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4">
+
+            <p className="text-xs text-white/40 text-center sm:text-left">
+              &copy; {new Date().getFullYear()} {COMPANY.name}. All rights reserved.
+            </p>
+
+            {/* Neonsol Creatives Website Link */}
+            <a
+              href="https://www.neonsolcreatives.co.ke"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit Neonsol Creatives website"
+              className="text-xs text-white/40 hover:text-brand-cyan-light transition-colors duration-300"
+            >
+              Neonsol Creatives
+            </a>
+
+          </div>
+
+          {/* Accepted Payment Methods */}
           <div className="flex items-center gap-1.5 text-xs text-white/40">
             <CreditCard className="w-3.5 h-3.5" />
             <span>Equity Bank &amp; M-Pesa accepted</span>
           </div>
+
         </div>
       </div>
     </footer>
